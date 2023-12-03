@@ -14,8 +14,7 @@
     padding: 20px;
   }
   .header__title{
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-inline-start: -20px;
+    
   }
 }
 
@@ -37,13 +36,11 @@
 
 .header{
   display: grid;
-  grid-template-rows: 299px max-content 299px;
-  
 }
 
 .decorated-zone{
   position: relative;
-  
+  grid-template-rows: 299px max-content 299px;
 }
 
 .decorated-zone::before{
@@ -90,14 +87,19 @@
   text-transform: lowercase;
 }
 
-.header__title{
+.accentid-shadow-text{
   font-weight: var(--bold-weight);
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--accent-color);
   color: #FFC2E6;
 }
 
-.title{
+.header__title{
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  margin-inline-start: -20px;
+}
+
+.header__subtitle{
   display: grid;
   grid-template-columns: 1fr minmax(355px, 1fr);
   align-items: center;
@@ -108,5 +110,97 @@
   font-weight: var(--bold-weight);
   line-height: 23.4px;
   grid-column-start: 2;
- 
+  font-size: var(--main-font-size);
+}
+
+
+/*section*/
+
+.section{
+  margin-block-start: 80px;
+}
+
+.section{
+  display: grid;
+  gap: 20px;
+}
+
+.section__why{
+  grid-template-columns: 315px 1fr;
+}
+
+.section__whot-list{
+  grid-template-columns: repeat(3, 1fr)
+}
+
+.section__how{
+  grid-template-columns: 315px 1fr;
+}
+
+.section__gallery{
+  margin-block-end: 60px;
+}
+
+.section__image{
+  display: grid;
+  grid-template-columns: minmax(1fr, 315px);
+}
+
+.subtitle-section__how{
+  margin-block-end: 20px;
+}
+
+.title-section__whot{
+  max-inline-size: 314px;
+}
+
+.title-section__gallery{
+  grid-column: 1/-1;
+}
+
+.title-section{
+  font-size: var(--main-font-size);
+  line-height: 23.4px;
+}
+
+.section__how-list-title{
+  font-weight: var(--normal-weight);
+}
+
+.section-list{
+  display: grid;
+  gap: 20px;
+}
+
+.list-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pargraph-text{
+  font-weight: var(--normal-weight);
+  line-height: 23.4px;
+}
+
+.text-hadow{
+  text-shadow: 2px 2px 0px var(--bg-text-color);
+  text-decoration: none;
+}
+
+
+
+
+
+
+.footer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title{
+  grid-row-start: 2;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
