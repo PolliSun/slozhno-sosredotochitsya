@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-@media (width <= 375px){
+@media (min-width: 375px){
   .page {
     padding: 10px;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-@media (width >= 376px){
+@media (min-width: 768px){
   .page {
     padding: 20px;
   }
@@ -19,7 +19,7 @@
   }
 }
 
-@media (width <= 375px) and (width >= 376px){
+@media (min-width: 1024px){
 
 }
 
@@ -27,24 +27,50 @@
   background-color: var(--bg-color, #FFF1F7);
   color: var(--text-color, #353430);
   background-image: url(/images/cover-image-light.png);
-  background-size: contain; 
+  background-size: auto 768px; 
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 20px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header{
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  min-height: 728px;
-
+  grid-template-rows: 299px max-content 299px;
+  
 }
 
 .decorated-zone{
+  position: relative;
+  
+}
 
+.decorated-zone::before{
+  content: "";
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  border-top: 1px solid #353430;
+  border-right: 1px solid #353430;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+}
+
+.decorated-zone::after{
+  content: "";
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  border-bottom: 1px solid #353430;
+  border-left: 1px solid #353430;
+  inset-inline-start: 0;
+  inset-block-end: 0;
 }
 
 .header__theme-menu{
-
+  display: grid;
+  align-items: flex-start; 
 }
 
 .header__theme-menu-list{
@@ -52,12 +78,10 @@
   grid-template-columns: repeat(auto-fit, 70px);
   gap: 10px;
   justify-content: center;
-  align-items: flex-start; 
 }
 
 .header__theme-menu-item{
   display: grid;
-  align-content: center;
 }
 
 .header__theme-menu-button{
@@ -67,16 +91,13 @@
 }
 
 .header__title{
-  display: grid;
   font-weight: var(--bold-weight);
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--accent-color);
   color: #FFC2E6;
-  align-items: center;
 }
 
 .title{
-  margin-block-start: -10px;
   display: grid;
   grid-template-columns: 1fr minmax(355px, 1fr);
   align-items: center;
@@ -87,4 +108,5 @@
   font-weight: var(--bold-weight);
   line-height: 23.4px;
   grid-column-start: 2;
+ 
 }
