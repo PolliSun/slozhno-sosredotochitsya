@@ -12,7 +12,6 @@ body {
   margin: 0 auto;
   font-family: 'IBM Plex mono';
   font-size: 18px;
-  block-size: 100%;
 }
 
 h1,
@@ -43,3 +42,4 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
