@@ -149,7 +149,7 @@ a:focus-visible {
   outline: 1px solid currentColor;
 }
 
-@media (width < 1024px) {
+@media (max-width: 1023px) {
   .decorated-zone {
     min-block-size: 96vh;
   }
@@ -270,7 +270,7 @@ section {
   grid-row: span 2;
 }
 
-@media (width < 1024px) {
+@media (max-width: 1023px) {
   .section__why,
   .section__how {
     grid-template-columns: 236px 1fr;
