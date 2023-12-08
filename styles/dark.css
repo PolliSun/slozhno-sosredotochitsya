@@ -18,6 +18,9 @@
   --main-title-color: #DB00FF;
   --accent-color: #FF0070;
   --visibility-rec-icon: visible;
+  --decorated-zone-frame-color: #FF0070;
+  --title-font-size-pc: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -27,17 +30,20 @@
 @media (prefers-color-scheme: dark){
   :root{
     --bg-color: #000028;
-    --bg-text-color: #FF0070;
-    --text-color: #F1B2CE; 
-    --text-color-header: #FF0070;
-    --normal-weight: 400;
-    --bold-weight: 700;
-    --accent-text-color: #000028;
-    --main-font-size: 18px;
-    --shadow-text: #FF0070;
-    --bg-image: url(/images/cover-image-dark.png);
-    --main-title-color: #DB00FF;
-    --accent-color: #FF0070;
-    --visibility-rec-icon: visible;
+  --bg-text-color: #FF0070;
+  --text-color: #F1B2CE; 
+  --text-color-header: #FF0070;
+  --normal-weight: 400;
+  --bold-weight: 700;
+  --accent-text-color: #000028;
+  --main-font-size: 18px;
+  --shadow-text: #FF0070;
+  --bg-image: url(/images/cover-image-dark.png);
+  --main-title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --visibility-rec-icon: visible;
+  --decorated-zone-frame-color: #FF0070;
+  --title-font-size-pc: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
