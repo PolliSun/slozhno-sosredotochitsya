@@ -7,9 +7,11 @@
     --hover-color:rgba(50, 49, 45, 0.40);
     --bg-color:#FFF1F7;
     --text-color: #353430;
+    --focus-color: #353430;
     --bg-text-color: #FF8DCB;
     --shadow-text: #FF0070;
-    --bg-image: url(/images/cover-image-light.png);
+    --accent-color:#353430;
+    --bg-image: url(../images/cover-image-light.png);
     --main-title-color: #FFC2E6;
     --visibility-rec-icon: hidden;
     --decorated-zone-frame-color: #353430;
@@ -24,9 +26,11 @@
     --hover-color:rgba(50, 49, 45, 0.40);
     --bg-color:#FFF1F7;
     --text-color: #353430;
+    --focus-color: #353430;
     --bg-text-color: #FF8DCB;
     --shadow-text: #FF0070;
-    --bg-image: url(/images/cover-image-light.png);
+    --accent-color:#353430;
+    --bg-image: url(../images/cover-image-light.png);
     --main-title-color: #FFC2E6;
     --visibility-rec-icon: hidden;
     --decorated-zone-frame-color: #353430;

@@ -91,6 +91,7 @@
 
 .header__theme-menu {
   align-items: flex-start;
+  color: var(--accent-color);
 }
 
 .header__theme-menu-list {
@@ -121,14 +122,14 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid currentColor;
+  outline: 1px solid var(--focus-color);
   pointer-events: none;
 }
 
 /*focus*/
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1px solid var(--focus-color);
   outline: none;
 }
 
@@ -146,7 +147,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 1px solid currentColor;
+  outline: 1px solid var(--text-color);
 }
 
 @media (max-width: 1023px) {
