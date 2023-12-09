@@ -3,19 +3,16 @@
   и их переопределение под различные устройства
 */
 
-
-
-
-:root{
-  --hover-color:rgba(50, 49, 45, 0.40);
-  --bg-color:#FFF1F7;
+:root {
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --bg-color: #fff1f7;
   --text-color: #353430;
   --focus-color: #353430;
-  --bg-text-color: #FF8DCB;
-  --shadow-text: #FF0070;
-  --accent-color:#353430;
+  --bg-text-color: #ff8dcb;
+  --shadow-text: #ff0070;
+  --accent-color: #353430;
   --bg-image: url(../images/cover-image-light.png);
-  --main-title-color: #FFC2E6;
+  --main-title-color: #ffc2e6;
   --visibility-rec-icon: hidden;
   --decorated-zone-frame-color: #353430;
   --main-font-size: 18px;
